@@ -25,12 +25,10 @@ module load qctool2
 date
 
 mkdir -p "${main_dir}/input_all"
-mkdir -p "${main_dir}/code"
+mkdir -p "${main_dir}/code_do_not_alter"
 mkdir -p "${main_dir}"/projects/"${proj_name}"/{input,bgen,reports,output,errors}
-
-
 
 printf "\n%s\n" "I am working on a new project called ${proj_name}, I want my output in the standard folders set-up which now exists at ${main_dir}/projects/${proj_name}"
 
 cp /scratch/am2609/Gwas/Read_me "${main_dir}"/Folder_Structure_Read_me
-cp /scratch/am2609/Gwas/code_current/*.sh  "${main_dir}"/code/
+cp /scratch/am2609/Gwas/code_released/*.sh  "${main_dir}"/code_do_not_alter/

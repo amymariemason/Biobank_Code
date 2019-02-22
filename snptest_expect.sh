@@ -37,7 +37,7 @@ snptest -data "${bgen_file}" "${sample_file}" \
 -o "${output_dir}"/"${output_name}_${line}.out" \
 -exclude_samples /scratch/am2609/Gwas/input_all/exclusion_list.txt \
 -frequentist 1 \
--method score \
+-method expected \
 -pheno "${line}" \
 -cov_names "${covar_arr[@]}" 
 done <"${outcome_file}"
